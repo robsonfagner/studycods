@@ -1,25 +1,64 @@
 // Funções
 
-// um conjunto de instruções ou uma pequena parte de aplicações
+// Um conjunto de instruções ou uma pequena parte da aplicação
 
-function somar  (){
-    return 5 * 3;
-}
+// function somar(valorUm, valorDois) {
+//   return console.log(valorUm + valorDois);
+// }
 
-console.log(somar())
+// somar(10, 2);
 
+// const somar = (valorUm, valorDois) => {
+//   return console.log(valorUm + valorDois);
+// };
+// somar(10, 2);
+
+// const somar = (valorUm, valorDois) => console.log(valorUm + valorDois);
+
+// somar(10, 2);
+
+// const somar = (valorUm, valorDois) => {
+//   return console.log(valorUm + valorDois);
+// };
+// somar(10, 2);
 
 // Processar um pagamento
+// function forma(formaPagamento) {
+//   if (formaPagamento == "Boleto") {
+//     return console.log("Imprimir Boleto!");
+//   }
+//   if (formaPagamento == "Cartão") {
+//     const parcela = 5;
+//     return console.log("Parcelado em ", parcela);
+//   }
+// }
 
+// function pagar(formaPagamento) {
+//   if (formaPagamento != "Boleto" && formaPagamento != "Cartão") {
+//     return console.error("Error, a forma deve ser Boleto ou Cartão");
+//   } else {
+//     return forma(formaPagamento);
+//   }
+// }
 
-function pagar(){
-    const boleto = true;
-    cartao = false;
+// pagar("Boleto");
 
-    const pagando = cartao
+const pagar = (formaPagamento) => {
+  if (formaPagamento != "Boleto" && formaPagamento != "Cartão") {
+    return console.error("Error, a forma deve ser Boleto ou Cartão");
+  } else {
+    return forma(formaPagamento);
+  }
+};
 
-    if(pagando == true){
-        n
-    }
+const forma = (formaPagamento) => {
+  if (formaPagamento == "Boleto") {
+    return console.log("Imprimir Boleto!");
+  }
+  if (formaPagamento == "Cartão") {
+    const parcela = 5;
+    return console.log("Parcelado em ", parcela);
+  }
+};
 
-}
+pagar("Boleto");
